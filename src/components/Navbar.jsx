@@ -14,7 +14,7 @@ const NAV_LINKS = [
 
 const Logo = ({ scrolled }) => (
   <Link to="/" className="flex items-center gap-2.5" aria-label="Madras Cafe">
-    <img src={logoBgW} alt="Madras Cafe" className="h-14 md:h-16 object-contain" />
+    <img src={logoBgW} alt="Madras Cafe" className="h-20 object-contain" />
   </Link>
 );
 
@@ -31,9 +31,8 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // On non-home pages, banner is dark green so we keep transparent state (white text)
-  // until user scrolls past the banner.
-  const solid = scrolled;
+  // User requested navbar to never be transparent
+  const solid = true;
 
   return (
     <>
@@ -53,7 +52,9 @@ const Navbar = () => {
                   <Link
                     key={l.label}
                     to={l.to}
-                    className={`nav-link font-heading text-[14px] font-medium transition-colors ${
+                    className={`nav-link font-heading text-[17px] transition-colors ${
+                      active ? "font-bold" : "font-medium"
+                    } ${
                       solid
                         ? active
                           ? "text-brand-greendeep"
@@ -70,16 +71,7 @@ const Navbar = () => {
             </nav>
 
             <div className="flex items-center gap-3">
-              <Link
-                to="/menu"
-                className={`hidden sm:inline-flex items-center gap-2 font-heading font-semibold text-sm px-5 py-2.5 rounded-full transition-all duration-300 hover:shadow-soft ${
-                  solid
-                    ? "bg-brand-green text-white hover:bg-brand-greendeep"
-                    : "bg-brand-gold text-brand-green hover:bg-white"
-                }`}
-              >
-                <ShoppingBag size={16} /> Order Now
-              </Link>
+
               <button
                 onClick={() => setOpen(true)}
                 aria-label="Open menu"
@@ -133,13 +125,7 @@ const Navbar = () => {
                 </motion.div>
               ))}
             </nav>
-            <Link
-              to="/menu"
-              onClick={() => setOpen(false)}
-              className="inline-flex items-center justify-center gap-2 bg-brand-green text-white font-heading font-semibold px-6 py-4 rounded-full"
-            >
-              <ShoppingBag size={18} /> Order Now
-            </Link>
+
           </motion.div>
         )}
       </AnimatePresence>

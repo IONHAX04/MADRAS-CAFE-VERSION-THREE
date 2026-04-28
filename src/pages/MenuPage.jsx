@@ -177,9 +177,7 @@ const MenuPage = () => {
                         {it.price}
                       </span>
                     </div>
-                    <button className="mt-3 inline-flex items-center gap-1.5 font-heading font-semibold text-brand-green text-sm hover:text-brand-greendeep">
-                      Add to Order <ArrowRight size={14} />
-                    </button>
+                    
                   </div>
                 </motion.article>
               ))}
@@ -195,26 +193,12 @@ const MenuPage = () => {
             Hungry already?
           </h3>
           <p className="font-display italic text-brand-green/80 text-lg md:text-xl mt-3">
-            Order online for delivery or pickup at any Madras Cafe near you.
+            Visit us at any Madras Cafe near you.
           </p>
-          <div className="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3">
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 bg-brand-green text-white font-heading font-semibold px-7 py-3.5 rounded-full hover:bg-brand-greendeep transition-all duration-300 hover:shadow-soft hover:-translate-y-0.5"
-            >
-              <ShoppingBag size={18} /> Order Online
-            </Link>
-            <Link
-              to="/locations"
-              className="inline-flex items-center gap-2 bg-transparent text-brand-green font-heading font-semibold px-7 py-3.5 rounded-full border-2 border-brand-green hover:bg-brand-green hover:text-white transition-all duration-300"
-            >
-              Find a Location
-            </Link>
-          </div>
-        </div>
-      </section>
+          </div></section>
     </motion.main>
   );
 };
 
 export default MenuPage;
+

@@ -1,3 +1,4 @@
+import food13 from '../assets/images/food13.jpeg';
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -21,9 +22,9 @@ const VALUES = [
 ];
 
 const TEAM = [
-  { name: "K. Subramaniam", role: "Founder — 1962", initials: "KS", image: "https://images.unsplash.com/photo-1620051787220-50768889e32c" },
-  { name: "Lakshmi Subramaniam", role: "Chef — Tiffins", initials: "LS", image: "https://images.unsplash.com/photo-1683533678059-63c6a0e9e3ef" },
-  { name: "Arun Subramaniam", role: "Master Chef — Coffee", initials: "AS", image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976" },
+  { name: "K. Subramaniam", role: "Founder — 1962", initials: "KS", image: food13 },
+  { name: "Lakshmi Subramaniam", role: "Chef — Tiffins", initials: "LS", image: food13 },
+  { name: "Arun Subramaniam", role: "Master Chef — Coffee", initials: "AS", image: food13 },
 ];
 
 const AboutPage = () => {
@@ -39,7 +40,7 @@ const AboutPage = () => {
         eyebrow="✦ Our Heritage ✦"
         title="OUR STORY"
         subtitle="Sixty-two years. Four generations. One recipe handed down with love."
-        image="https://images.unsplash.com/photo-1668236543090-82eba5ee5976"
+        image={food13}
       />
 
       {/* Story split */}
@@ -218,3 +219,7 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
+
+
+

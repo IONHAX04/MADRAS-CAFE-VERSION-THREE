@@ -1,3 +1,4 @@
+import food14 from '../assets/images/food14.jpeg';
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Clock, Send, Calendar, Users, Check } from "lucide-react";
@@ -54,7 +55,7 @@ const ContactPage = () => {
         eyebrow="✦ Say Vanakkam ✦"
         title="GET IN TOUCH"
         subtitle="Questions, feedback, or a craving that won’t go away — we’re listening."
-        image="https://images.unsplash.com/photo-1620051787220-50768889e32c"
+        image={food14}
       />
 
       {/* Top contact info */}
@@ -204,3 +205,7 @@ const Field = ({ label, required, children, dark, icon }) => (
 );
 
 export default ContactPage;
+
+
+
+

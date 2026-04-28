@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ScrollProgress from "./components/ScrollProgress";
+
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -16,7 +16,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <ScrollProgress />
         <ScrollToTop />
         <Navbar />
         <Routes>

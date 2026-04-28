@@ -35,7 +35,7 @@ export const signatureDishes = [
     name: "Masala Dosa",
     desc: "Crispy golden crepe filled with spiced potato masala. Served with sambar & three chutneys.",
     price: "\u20b9 180",
-    image: "https://images.unsplash.com/photo-1694849789325-914b71ab4075",
+    image: food12,
     tag: "Bestseller",
   },
   {
@@ -43,7 +43,7 @@ export const signatureDishes = [
     name: "Idli & Sambar",
     desc: "Steamed rice cakes, soft as cloud, drowned in lentil sambar with coconut chutney.",
     price: "\u20b9 120",
-    image: "https://images.unsplash.com/photo-1683533678059-63c6a0e9e3ef",
+    image: food12,
     tag: "Classic",
   },
   {
@@ -66,31 +66,31 @@ export const signatureDishes = [
 
 export const menuCategories = {
   Breakfast: [
-    { name: "Masala Dosa", image: "https://images.unsplash.com/photo-1694849789325-914b71ab4075", price: "\u20b9 180" },
-    { name: "Idli Vada", image: "https://images.unsplash.com/photo-1683533678059-63c6a0e9e3ef", price: "\u20b9 140" },
+    { name: "Masala Dosa", image: food12, price: "\u20b9 180" },
+    { name: "Idli Vada", image: food12, price: "\u20b9 140" },
     { name: "Pongal", image: "https://images.pexels.com/photos/5410418/pexels-photo-5410418.jpeg", price: "\u20b9 150" },
     { name: "Rava Dosa", image: "https://images.pexels.com/photos/32229637/pexels-photo-32229637.png", price: "\u20b9 170" },
-    { name: "Upma", image: "https://images.unsplash.com/photo-1680359871322-aabe6b33eff5", price: "\u20b9 110" },
+    { name: "Upma", image: food12, price: "\u20b9 110" },
   ],
   Lunch: [
     { name: "Banana Leaf Meals", image: "https://images.pexels.com/photos/35351659/pexels-photo-35351659.jpeg", price: "\u20b9 320" },
     { name: "Curd Rice", image: food3, price: "\u20b9 140" },
     { name: "Sambar Rice", image: "https://images.pexels.com/photos/20422121/pexels-photo-20422121.jpeg", price: "\u20b9 160" },
-    { name: "Hyderabadi Biryani", image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0", price: "\u20b9 320" },
+    { name: "Hyderabadi Biryani", image: food12, price: "\u20b9 320" },
     { name: "Vegetable Kuzhambu", image: "https://images.pexels.com/photos/35287413/pexels-photo-35287413.jpeg", price: "\u20b9 220" },
   ],
   Snacks: [
-    { name: "Medu Vada", image: "https://images.unsplash.com/photo-1743517894265-c86ab035adef", price: "\u20b9 90" },
+    { name: "Medu Vada", image: food12, price: "\u20b9 90" },
     { name: "Bonda", image: "https://images.pexels.com/photos/11887844/pexels-photo-11887844.jpeg", price: "\u20b9 80" },
     { name: "Onion Pakora", image: "https://images.pexels.com/photos/33947401/pexels-photo-33947401.jpeg", price: "\u20b9 100" },
-    { name: "Mysore Bonda", image: "https://images.unsplash.com/photo-1635564981692-857482d9325f", price: "\u20b9 110" },
+    { name: "Mysore Bonda", image: food12, price: "\u20b9 110" },
     { name: "Banana Bajji", image: "https://images.pexels.com/photos/20446398/pexels-photo-20446398.jpeg", price: "\u20b9 90" },
   ],
   Beverages: [
-    { name: "Madras Filter Coffee", image: "https://images.unsplash.com/photo-1620051787220-50768889e32c", price: "\u20b9 90" },
-    { name: "Masala Chai", image: "https://images.unsplash.com/photo-1522825397800-ddf6405fc258", price: "\u20b9 70" },
-    { name: "Tender Coconut", image: "https://images.unsplash.com/photo-1587955245893-389f2215c6eb", price: "\u20b9 80" },
-    { name: "Buttermilk", image: "https://images.unsplash.com/photo-1517244683847-7456b63c5969", price: "\u20b9 60" },
+    { name: "Madras Filter Coffee", image: food12, price: "\u20b9 90" },
+    { name: "Masala Chai", image: food12, price: "\u20b9 70" },
+    { name: "Tender Coconut", image: food12, price: "\u20b9 80" },
+    { name: "Buttermilk", image: food12, price: "\u20b9 60" },
     { name: "Rose Milk", image: "https://images.pexels.com/photos/20446398/pexels-photo-20446398.jpeg", price: "\u20b9 90" },
   ],
 };
@@ -104,19 +104,19 @@ export const aboutContent = {
   ],
   images: [
     food3,
-    "https://images.unsplash.com/photo-1620051787220-50768889e32c",
+    food12,
   ],
 };
 
 export const galleryImages = [
   { src: "https://images.pexels.com/photos/35351659/pexels-photo-35351659.jpeg", h: "tall" },
-  { src: "https://images.unsplash.com/photo-1620051787220-50768889e32c", h: "short" },
-  { src: "https://images.unsplash.com/photo-1694849789325-914b71ab4075", h: "short" },
+  { src: food12, h: "short" },
+  { src: food12, h: "short" },
   { src: "https://images.pexels.com/photos/5410418/pexels-photo-5410418.jpeg", h: "tall" },
   { src: food3, h: "short" },
   { src: "https://images.pexels.com/photos/20422121/pexels-photo-20422121.jpeg", h: "tall" },
-  { src: "https://images.unsplash.com/photo-1683533678059-63c6a0e9e3ef", h: "short" },
-  { src: "https://images.unsplash.com/photo-1587955245893-389f2215c6eb", h: "tall" },
+  { src: food12, h: "short" },
+  { src: food12, h: "tall" },
 ];
 
 export const locations = [
@@ -200,5 +200,6 @@ export const menuPanel = {
   image: "https://images.pexels.com/photos/20422121/pexels-photo-20422121.jpeg",
   badge: "Crafted Slow",
 };
+
 
 

@@ -2,6 +2,9 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { story, menuTease } from "../mock";
 import { ArrowRight } from "lucide-react";
+import bgImg from "../assets/images/food3.jpg";
+import img1 from "../assets/images/food1.jpeg";
+import img2 from "../assets/images/food2.jpeg";
 
 const HorizontalScrollSection = () => {
   const targetRef = useRef(null);
@@ -26,8 +29,7 @@ const HorizontalScrollSection = () => {
             style={{
               scale: bgScale,
               opacity: bgOpacity,
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1668236543090-82eba5ee5976')",
+              backgroundImage: `url(${bgImg})`,
             }}
             className="absolute inset-0 bg-cover bg-center"
           />
@@ -73,7 +75,7 @@ const HorizontalScrollSection = () => {
                 <div className="col-span-5 relative">
                   <div className="aspect-[4/5] rounded-[6px] overflow-hidden border-4 border-[#f3b700] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]">
                     <img
-                      src="https://images.pexels.com/photos/35351659/pexels-photo-35351659.jpeg"
+                      src={img1}
                       alt="Madras filter coffee"
                       className="w-full h-full object-cover"
                     />
@@ -91,7 +93,7 @@ const HorizontalScrollSection = () => {
                 <div className="col-span-5 relative order-2">
                   <div className="aspect-[4/5] rounded-[6px] overflow-hidden border-4 border-[#f3b700] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]">
                     <img
-                      src="https://images.pexels.com/photos/20422121/pexels-photo-20422121.jpeg"
+                      src={img2}
                       alt="Dosa close up"
                       className="w-full h-full object-cover"
                     />
@@ -145,7 +147,7 @@ const HorizontalScrollSection = () => {
             ))}
           </div>
           <img
-            src="https://images.pexels.com/photos/35351659/pexels-photo-35351659.jpeg"
+            src={img1}
             alt="Madras filter coffee"
             className="mt-10 rounded-[6px] border-4 border-[#f3b700] aspect-[4/5] object-cover w-full"
           />
@@ -163,7 +165,7 @@ const HorizontalScrollSection = () => {
             See Full Menu <ArrowRight size={16} />
           </a>
           <img
-            src="https://images.pexels.com/photos/20422121/pexels-photo-20422121.jpeg"
+            src={img2}
             alt="Dosa close up"
             className="mt-10 rounded-[6px] border-4 border-[#f3b700] aspect-[4/5] object-cover w-full"
           />

@@ -61,13 +61,7 @@ const SignatureDishes = () => {
                 <p className="font-body text-brand-ink/75 text-sm mt-2.5 leading-relaxed line-clamp-3">
                   {d.desc}
                 </p>
-                <div className="mt-4 h-px bg-brand-green/15" />
-                <Link
-                  to="/menu"
-                  className="mt-4 inline-flex items-center gap-1.5 font-heading font-semibold text-brand-green text-sm opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-300"
-                >
-                  Order Now <ArrowRight size={14} />
-                </Link>
+
               </div>
             </motion.article>
           ))}

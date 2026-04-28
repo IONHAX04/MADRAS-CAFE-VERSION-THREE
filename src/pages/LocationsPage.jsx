@@ -4,16 +4,17 @@ import { Link } from "react-router-dom";
 import { MapPin, Clock, Phone, Navigation, Mail } from "lucide-react";
 import PageBanner from "../components/PageBanner";
 import { locations } from "../mock";
+import food15 from "../assets/images/food15.jpg";
 
 const FULL_LOCATIONS = locations.map((l, i) => ({
   ...l,
   phone: ["+91 44 2811 0001", "+91 80 2520 0002", "+91 22 2640 0003", "+91 40 2354 0004"][i] || "+91 00 0000 0000",
   email: ["chennai@madrascafe.in", "bengaluru@madrascafe.in", "mumbai@madrascafe.in", "hyderabad@madrascafe.in"][i] || "hello@madrascafe.in",
   image: [
-    "https://images.unsplash.com/photo-1668236543090-82eba5ee5976",
-    "https://images.unsplash.com/photo-1620051787220-50768889e32c",
-    "https://images.pexels.com/photos/35351659/pexels-photo-35351659.jpeg",
-    "https://images.pexels.com/photos/5410418/pexels-photo-5410418.jpeg",
+    food15,
+    food15,
+    food15,
+    food15,
   ][i],
 }));
 
@@ -30,7 +31,7 @@ const LocationsPage = () => {
         eyebrow="✦ Eight Cafes, One Soul ✦"
         title="FIND US"
         subtitle="From Mylapore to Bandra — every Madras Cafe is a doorway home."
-        image="https://images.pexels.com/photos/35351659/pexels-photo-35351659.jpeg"
+        image={food15}
       />
 
       {/* Map placeholder + intro */}
@@ -134,12 +135,6 @@ const LocationsPage = () => {
                     >
                       <Navigation size={14} /> Directions
                     </a>
-                    <Link
-                      to="/menu"
-                      className="inline-flex items-center justify-center gap-2 border-2 border-brand-green text-brand-green font-heading font-semibold text-sm px-4 py-2 rounded-full hover:bg-brand-green hover:text-white transition-colors"
-                    >
-                      Order Here
-                    </Link>
                   </div>
                 </div>
               </motion.article>
